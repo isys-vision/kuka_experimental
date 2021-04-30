@@ -8,22 +8,27 @@
     </p>
     <p>
       This package contains configuration data, 3D models and launch files
-      for KUKA KR 150 manipulators. This currently includes the -2 variant
-      only.
+      for KUKA KR 150 manipulators. This currently includes the KR150-2,
+      the R3100 prime and the R3100-2 variant.
     </p>
     <p><b>Specifications</b>:</p>
     <ul>
       <li>KR 150-2 - Default</li>
+      <li>KR 150 R3100 prime - Default</li>
       <li>KR 150 R3100-2 - Default</li>
     </ul>
     <p>
-      Joint limits and maximum joint velocities are based on the information
+      Joint limits and maximum joint velocities for the KR 150-2 are based on the information
       found in <em>Series 2000 KR 150-2</em>, version <em>PF0020/E/1/0709</em>.
       All urdfs are based on the default motion and joint velocity limits,
       unless noted otherwise.
     </p>
+      Joint limits and maximum joint velocities for the KR 150 R3100 prime are based on the information
+      found in the online datasheet <a href="0000182743_DE.pdf 05.05.2021">here</a>.
+      All urdfs are based on the default motion and joint velocity limits,
+      unless noted otherwise.
     <p>
-      Joint limits and maximum joint velocities of KR 150 R3100-2 are based on the information
+      Joint limits and maximum joint velocities for the KR 150 R3100-2 are based on the information
       found in the online datasheet <em>KR 150 R3100-2</em>, version <em>0000-346-515 / V22.1 / 26.03.2021</em>.
       All urdfs are based on the default motion and joint velocity limits,
       unless noted otherwise.
@@ -35,6 +40,7 @@
     </p>
   </description>
   <author>Dennis Hartmann</author>
+  <author email="timo.birnkraut@optonic.com">Timo Birnkraut (Optonic GmbH)</author>
   <maintainer email="dennis.hartmann@kit.edu">Dennis Hartmann (KIT, IAR-IPR)</maintainer>
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
   <license>BSD</license>

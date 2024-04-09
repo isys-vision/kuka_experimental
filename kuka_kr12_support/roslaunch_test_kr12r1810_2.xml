@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<launch>
+  <group ns="load_kr12r1810_2__">
+    <include file="$(find kuka_kr12_support)/launch/load_kr12r1810_2.launch"/>
+  </group>
+
+  <group ns="test_kr12r1810_2__">
+    <include file="$(find kuka_kr12_support)/launch/test_kr12r1810_2.launch"/>
+  </group>
+</launch>

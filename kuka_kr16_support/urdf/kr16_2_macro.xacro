@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:include filename="$(find kuka_resources)/urdf/common_constants.xacro"/>
+  <xacro:include filename="$(find kuka_resources)/urdf/common_materials.xacro"/>
 
   <xacro:macro name="kuka_kr16_2" params="prefix">
     <!-- LINKS -->
@@ -13,8 +15,9 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://kuka_kr16_support/meshes/kr16_2/visual/base_link.dae" />
+          <mesh filename="package://kuka_kr16_support/meshes/kr16_2/visual/base_link.stl" />
         </geometry>
+        <xacro:material_kuka_pedestal />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -33,8 +36,9 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://kuka_kr16_support/meshes/kr16_2/visual/link_1.dae" />
+          <mesh filename="package://kuka_kr16_support/meshes/kr16_2/visual/link_1.stl" />
         </geometry>
+        <xacro:material_kuka_orange />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -53,8 +57,9 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://kuka_kr16_support/meshes/kr16_2/visual/link_2.dae"/>
+          <mesh filename="package://kuka_kr16_support/meshes/kr16_2/visual/link_2.stl"/>
         </geometry>
+        <xacro:material_kuka_orange />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -73,8 +78,9 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://kuka_kr16_support/meshes/kr16_2/visual/link_3.dae" />
+          <mesh filename="package://kuka_kr16_support/meshes/kr16_2/visual/link_3.stl" />
         </geometry>
+        <xacro:material_kuka_orange />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -93,8 +99,9 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://kuka_kr16_support/meshes/kr16_2/visual/link_4.dae" />
+          <mesh filename="package://kuka_kr16_support/meshes/kr16_2/visual/link_4.stl" />
         </geometry>
+        <xacro:material_kuka_orange />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -113,8 +120,9 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://kuka_kr16_support/meshes/kr16_2/visual/link_5.dae" />
+          <mesh filename="package://kuka_kr16_support/meshes/kr16_2/visual/link_5.stl" />
         </geometry>
+        <xacro:material_kuka_orange />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -133,8 +141,9 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://kuka_kr16_support/meshes/kr16_2/visual/link_6.dae" />
+          <mesh filename="package://kuka_kr16_support/meshes/kr16_2/visual/link_6.stl" />
         </geometry>
+        <xacro:material_kuka_pedestal />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>

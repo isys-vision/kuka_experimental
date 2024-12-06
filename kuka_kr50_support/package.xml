@@ -4,16 +4,17 @@
   <version>0.1.0</version>
   <description>
     <p>
-      ROS-Industrial support for the KUKA KR50 R2100 (and variants).
+      ROS-Industrial support for the KUKA KR50 (and variants).
     </p>
     <p>
       This package contains configuration data, 3D models and launch files
-      for KUKA KR50 R2100 manipulators. This currently includes the KUKA KR50 R2100 only.
-      Besides velocity limits this is identical to KUKA KR70 R2100.
+      for KUKA KR50 manipulators. This currently includes the KUKA KR50 R2100, which is
+      identical to KUKA KR70 R2100 besides velocity limits, and the R2500.
     </p>
     <p><b>Specifications</b>:</p>
     <ul>
       <li>KR50 R2100 - Default</li>
+      <li>KR50 R2500 - Default</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities are based on the information

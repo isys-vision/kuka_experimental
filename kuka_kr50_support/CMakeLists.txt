@@ -10,5 +10,5 @@ if (CATKIN_ENABLE_TESTING)
   find_package(roslaunch REQUIRED)
 endif()
 
-install(DIRECTORY config launch urdf
+install(DIRECTORY config launch meshes urdf
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})

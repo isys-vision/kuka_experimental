@@ -1,0 +1,9 @@
+<launch>
+  <group ns="load_kr8r1640_2__">
+    <include file="$(find kuka_kr8_support)/launch/load_kr8r1640_2.launch"/>
+  </group>
+
+  <group ns="test_kr8r1640_2__">
+    <include file="$(find kuka_kr8_support)/launch/test_kr8r1640_2.launch"/>
+  </group>
+</launch>

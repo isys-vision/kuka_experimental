@@ -8,6 +8,7 @@ catkin_package()
 
 if (CATKIN_ENABLE_TESTING)
   find_package(roslaunch REQUIRED)
+  roslaunch_add_file_check(test/roslaunch_test_kr70_r2100.xml)
 endif()
 
 install(DIRECTORY config launch meshes urdf

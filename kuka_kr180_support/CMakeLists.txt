@@ -9,6 +9,7 @@ catkin_package()
 if (CATKIN_ENABLE_TESTING)
   find_package(roslaunch REQUIRED)
   roslaunch_add_file_check(test/roslaunch_test_kr180_r3500-2_k.xml)
+  roslaunch_add_file_check(test/roslaunch_test_kr180_r3500-ultra_k.xml)
 endif()
 
 install(DIRECTORY config launch meshes urdf

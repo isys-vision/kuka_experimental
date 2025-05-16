@@ -6,4 +6,8 @@
   <group ns="test_kr120r2500pro__">
     <include file="$(find kuka_kr120_support)/launch/test_kr120r2500pro.launch"/>
   </group>
+
+  <group ns="test_kr120_r3900-2_k__">
+    <include file="$(find kuka_kr120_support)/launch/test_kr120_r3900-2_k.launch"/>
+  </group>
 </launch>

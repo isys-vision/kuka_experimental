@@ -3,7 +3,7 @@
   <xacro:include filename="$(find kuka_resources)/urdf/common_constants.xacro"/>
   <xacro:include filename="$(find kuka_resources)/urdf/common_materials.xacro"/>
 
-  <xacro:macro name="kuka_kr150_r3100-2" params="prefix">
+  <xacro:macro name="kuka_kr150_r2700-2" params="prefix">
     <!-- LINKS -->
     <!-- base link -->
     <link name="${prefix}base_link">
@@ -42,14 +42,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://kuka_kr150_support/meshes/kr150_r3100-2/visual/link_2.stl"/>
+          <mesh filename="package://kuka_kr150_support/meshes/kr150_r2700-2/visual/link_2.stl" />
         </geometry>
         <xacro:material_kuka_orange />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://kuka_kr150_support/meshes/kr150_r3100-2/collision/link_2.stl"  />
+          <mesh filename="package://kuka_kr150_support/meshes/kr150_r2700-2/collision/link_2.stl" />
         </geometry>
       </collision>
     </link>
@@ -58,14 +58,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://kuka_kr150_support/meshes/kr150_r3100-2/visual/link_3.stl" />
+          <mesh filename="package://kuka_kr150_support/meshes/kr150_r2700-2/visual/link_3.stl" />
         </geometry>
         <xacro:material_kuka_orange />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://kuka_kr150_support/meshes/kr150_r3100-2/collision/link_3.stl"  />
+          <mesh filename="package://kuka_kr150_support/meshes/kr150_r2700-2/collision/link_3.stl" />
         </geometry>
       </collision>
     </link>
@@ -129,7 +129,7 @@
       <parent link="${prefix}base_link"/>
       <child link="${prefix}link_1"/>
       <axis xyz="0 0 -1"/>
-      <limit effort="0" lower="${radians(-185)}" upper="${radians(185)}" velocity="${radians(105)}"/>
+      <limit effort="0" lower="${radians(-185)}" upper="${radians(185)}" velocity="${radians(120)}"/>
     </joint>
     <!-- joint 2 (A2) -->
     <joint name="${prefix}joint_a2" type="revolute">
@@ -137,19 +137,19 @@
       <parent link="${prefix}link_1"/>
       <child link="${prefix}link_2"/>
       <axis xyz="0 1 0"/>
-      <limit effort="0" lower="${radians(-140)}" upper="${radians(-5)}" velocity="${radians(107)}"/>
+      <limit effort="0" lower="${radians(-140)}" upper="${radians(-5)}" velocity="${radians(115)}"/>
     </joint>
     <!-- joint 3 (A3) -->
     <joint name="${prefix}joint_a3" type="revolute">
-      <origin xyz="1.350 0 0" rpy="0 0 0"/>
+      <origin xyz="1.150 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_2"/>
       <child link="${prefix}link_3"/>
       <axis xyz="0 1 0"/>
-      <limit effort="0" lower="${radians(-120)}" upper="${radians(168)}" velocity="${radians(114)}"/>
+      <limit effort="0" lower="${radians(-120)}" upper="${radians(168)}" velocity="${radians(120)}"/>
     </joint>
     <!-- joint 4 (A4) -->
     <joint name="${prefix}joint_a4" type="revolute">
-      <origin xyz="1.420 0 0.115" rpy="0 0 0"/>
+      <origin xyz="1.220 0 0.115" rpy="0 0 0"/>
       <parent link="${prefix}link_3"/>
       <child link="${prefix}link_4"/>
       <axis xyz="-1 0 0"/>

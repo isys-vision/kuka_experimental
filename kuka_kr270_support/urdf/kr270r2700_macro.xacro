@@ -114,35 +114,35 @@
       <parent link="${prefix}base_link"/>
       <child link="${prefix}link_1"/>
       <axis xyz="0 0 -1"/>
-      <limit lower="${radians(-170)}" upper="${radians(170)}" effort="0" velocity="${radians(105)}"/>
+      <limit lower="${radians(-185)}" upper="${radians(185)}" effort="0" velocity="${radians(105)}"/>
     </joint>
     <joint name="${prefix}joint_a2" type="revolute">
       <origin xyz="0.350 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_1"/>
       <child link="${prefix}link_2"/>
       <axis xyz="0 1 0"/>
-      <limit lower="${radians(-195)}" upper="${radians(40)}" effort="0" velocity="${radians(101)}"/>
+      <limit lower="${radians(-140)}" upper="${radians(-5)}" effort="0" velocity="${radians(101)}"/>
     </joint>
     <joint name="${prefix}joint_a3" type="revolute">
       <origin xyz="1.150 0 0.0" rpy="0 0 0"/>
       <parent link="${prefix}link_2"/>
       <child link="${prefix}link_3"/>
       <axis xyz="0 1 0"/>
-      <limit lower="${radians(-115)}" upper="${radians(150)}" effort="0" velocity="${radians(107)}"/>
+      <limit lower="${radians(-120)}" upper="${radians(155)}" effort="0" velocity="${radians(107)}"/>
     </joint>
     <joint name="${prefix}joint_a4" type="revolute">
       <origin xyz="1.200 0 -0.041" rpy="0 0 0"/>
       <parent link="${prefix}link_3"/>
       <child link="${prefix}link_4"/>
       <axis xyz="-1 0 0"/>
-      <limit lower="${radians(-185)}" upper="${radians(185)}" effort="0" velocity="${radians(122)}"/>
+      <limit lower="${radians(-350)}" upper="${radians(350)}" effort="0" velocity="${radians(122)}"/>
     </joint>
     <joint name="${prefix}joint_a5" type="revolute">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_4"/>
       <child link="${prefix}link_5"/>
       <axis xyz="0 1 0"/>
-      <limit lower="${radians(-120)}" upper="${radians(120)}" effort="0" velocity="${radians(113)}"/>
+      <limit lower="${radians(-122.5)}" upper="${radians(122.5)}" effort="0" velocity="${radians(113)}"/>
     </joint>
     <joint name="${prefix}joint_a6" type="revolute">
       <origin xyz="0.240 0 0" rpy="0 0 0"/>

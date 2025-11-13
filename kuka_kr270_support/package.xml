@@ -17,7 +17,7 @@
     <p>
       Joint limits and maximum joint velocities are based on the information
       in the <em>KUKA Roboter GmbH - KR 270 R2700 ultra F Specification</em> version
-      <em>Datasheet KR 270 R2700 ultra F V45.1, 28.01.2021</em>.
+      <em>Datasheet KR 270 R2700 ultra F V15.1, 13.10.2021</em>.
       All urdfs are based on the default motion and joint velocity limits,
       unless noted otherwise (ie: no support for high speed joints,
       extended / limited motion ranges or other options).

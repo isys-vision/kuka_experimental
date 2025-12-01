@@ -9,11 +9,12 @@
     <p>
       This package contains configuration data, 3D models and launch files
       for KUKA KR 120 manipulators. This currently includes the R2500 PRO
-      (KR QUANTEC PRO), KR 120 R3100-2 and KR 120 R3900-2 K.
+      (KR QUANTEC PRO), KR 120 R2700-2, KR 120 R3100-2 and KR 120 R3900-2 K.
     </p>
     <p><b>Specifications</b>:</p>
     <ul>
       <li>KR 120 R2500 PRO - Default</li>
+      <li>KR 120 R2700-2</li>
       <li>KR 120 R3100-2 - Default</li>
       <li>KR 120 R3900-2 K - Default</li>
     </ul>

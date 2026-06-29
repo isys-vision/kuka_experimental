@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>kuka_kr1250_support</name>
+  <version>0.1.0</version>
+  <description>
+    <p>
+      ROS-Industrial support for the KUKA KR 1250 (and variants).
+    </p>
+    <p>
+      This package contains configuration data, 3D models and launch files
+      for KUKA KR 1250 manipulators. This currently includes the R3700-2 F.
+    </p>
+    <p><b>Specifications</b>:</p>
+    <ul>
+      <li>KR 1250 R3700-2 F - Default</li>
+    </ul>
+    <p>
+      Joint limits and maximum joint velocities of KR1250 R3700-2F are based on the information
+      found in the online datasheet <em>0000-470-278 / V1.2 / 26.02.2026</em>. All urdfs are based on the default motion and joint velocity limits,
+      unless noted otherwise.
+    </p>
+    <p>
+      Before using any of the configuration files and / or meshes included
+      in this package, be sure to check they are correct for the particular
+      robot model and configuration you intend to use them with.
+    </p>
+  </description>
+  <author>Max Koerner</author>
+  <maintainer email="max.koerner@optonic.com">Max Koerner</maintainer>
+  <license>BSD</license>
+
+  <url type="repository">https://github.com/ros-industrial/kuka_experimental</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <test_depend>roslaunch</test_depend>
+
+  <exec_depend>industrial_robot_client</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+  <export>
+    <architecture_independent/>
+  </export>
+</package>

@@ -14,7 +14,8 @@
     <ul>
       <li>KR 210 L150 - Default</li>
       <li>KR 210 R3100-2 - Default</li>
-      <li>KR 210 R3100-2 - Default</li>
+      <li>KR 210 R2700 prime - Default</li>
+      <li>KR 210 R2700-2 - Default</li>
     </ul>
     <p>
       Joint limits and maximum joint velocities of KR 210 L150 are based on the information
@@ -30,6 +31,11 @@
     <p>
       Joint limits and maximum joint velocities of KR 210 R2700-prime are based on the information
       found in the online datasheet <em>0000-181-027 / V17.1 / 13.07.2022 / de</em>. All urdfs are based on the default motion and joint velocity limits,
+      unless noted otherwise.
+    </p>
+     <p>
+      Joint limits and maximum joint velocities of KR 210 R2700-2 are based on the information
+      found in the online datasheet <em>0000-325-858 / V13.1 / 27.09.2025 / en</em>. All urdfs are based on the default motion and joint velocity limits,
       unless noted otherwise.
     </p>
     <p>

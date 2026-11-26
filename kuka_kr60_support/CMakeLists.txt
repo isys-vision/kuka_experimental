@@ -1,5 +1,5 @@
  
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.22.0)
 
 project(kuka_kr60_support)
 
